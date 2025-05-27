@@ -40,5 +40,10 @@ namespace Project
         {
             TagGameForm.Instance.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CodeForm.Instance.Show();
+        }
     }
 }
