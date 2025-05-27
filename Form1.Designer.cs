@@ -35,11 +35,12 @@
             // 
             // button1
             // 
-            button1.Location = new Point(475, 226);
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            button1.Location = new Point(428, 226);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(203, 110);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "ЛОГИКА";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
