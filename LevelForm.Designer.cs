@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class LogicForm
+    partial class LevelForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,55 +35,50 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button1.Location = new Point(493, 212);
+            button1.Location = new Point(441, 468);
             button1.Name = "button1";
-            button1.Size = new Size(230, 97);
+            button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
-            button1.TabStop = false;
-            button1.Text = "ПЯТНАШКИ";
+            button1.Text = "Уровень 1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button2.Location = new Point(79, 212);
+            button2.Location = new Point(131, 344);
             button2.Name = "button2";
-            button2.Size = new Size(230, 97);
+            button2.Size = new Size(94, 29);
             button2.TabIndex = 1;
-            button2.Text = "ШИФР";
+            button2.Text = "Уровень 2";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button3.Location = new Point(887, 212);
+            button3.Location = new Point(348, 210);
             button3.Name = "button3";
-            button3.Size = new Size(230, 97);
+            button3.Size = new Size(94, 29);
             button3.TabIndex = 2;
-            button3.Text = "ЛАБИРИНТ";
+            button3.Text = "Уровень 3";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
-            // LogicForm
+            // LevelForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1200, 583);
+            BackgroundImage = Properties.Resources.photo_2025_06_05_12_43_45;
+            ClientSize = new Size(730, 525);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "LogicForm";
-            Text = "LogicForm";
+            Name = "LevelForm";
+            Text = "LevelForm";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button button1;
         private Button button2;
         private Button button3;
+        public Button button1;
     }
 }
