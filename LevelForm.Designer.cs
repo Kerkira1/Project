@@ -61,6 +61,7 @@
             button3.TabIndex = 2;
             button3.Text = "Уровень 3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // LevelForm
             // 

@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class LevelForm : Form
+    public partial class Third_MazeForm : Form
     {
-        private static LevelForm _instance;
-        public static LevelForm Instance
+        private static Third_MazeForm _instance;
+        public static Third_MazeForm Instance
         {
             get
             {
                 if (_instance == null || _instance.IsDisposed)
                 {
-                    _instance = new LevelForm();
+                    _instance = new Third_MazeForm();
                 }
                 else
                 {
@@ -30,26 +30,26 @@ namespace Project
                 return _instance;
             }
         }
-        public LevelForm()
+        public Third_MazeForm()
         {
             InitializeComponent();
+            StartCursorLocation();
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void StartCursorLocation()
         {
-            First_MazeForm.Instance.Show();
-
+            Cursor.Position = PointToScreen(panel2.Location);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label106_MouseEnter(object sender, EventArgs e)
         {
-            Second_MazeForm.Instance.Show();
+            StartCursorLocation();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
-            Third_MazeForm.Instance.Show();
+            MessageBox.Show("Поздравляем, вы прошли лабиринт!!", "Победа", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
     }
 }
